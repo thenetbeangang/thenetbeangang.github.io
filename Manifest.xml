@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MSDeploy.iisApp>
+  <iisApp path="FileVista" />
+  <setAcl path="FileVista" setAclAccess="Read" />
+  <setAcl path="FileVista/App_Data" setAclAccess="Modify" />
+</MSDeploy.iisApp>

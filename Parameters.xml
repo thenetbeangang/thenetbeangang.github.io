@@ -1,0 +1,9 @@
+﻿<parameters>
+  <parameter name="FileVista Application Path" description="Full site path where you want to install FileVista (for example, Default Web Site/FileVista)." defaultValue="Default Web Site/FileVista" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="iisApp" match="FileVista" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="FileVista" />
+  </parameter>
+  <parameter name="FileVista App_Data Folder Path" description="App_Data folder path where modify permission will be applied." defaultValue="{FileVista Application Path}/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="FileVista/App_Data" />
+  </parameter>
+</parameters>
