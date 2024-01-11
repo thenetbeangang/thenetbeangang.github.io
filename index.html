@@ -44,7 +44,7 @@
         <!-- Bucle para mostrar la información de los elementos en el carrito -->
         <ul>
           <li v-for="(item, index) in cart" :key="index">
-            {{ item.name }} - €{{ item.price.toFixed(2) }}
+            {{ item.name }} - {{ item.price.toFixed(2) }} €
             <input
               type="number"
               v-model="item.quantity"
