@@ -1,76 +1,86 @@
 body {
-    display: flex;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
-  }
-  
-  #app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-  }
-  
-  .product-selection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .product-item {
-    border: 1px solid #ddd;
-    background-color: #fff;
-    padding: 15px;
-    margin: 10px;
-    width: calc(33.33% - 20px); 
-    box-sizing: border-box;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .cart-sidebar {
-    position: fixed;
-    align-self: flex-end;
-    width: 50%;
-    background-color: #fff;
-    margin-top: 20px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .cart-sidebar h2 {
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .cart-sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .cart-sidebar li {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .cart-sidebar input {
-    width: 40px;
-    text-align: center;
-  }
-  
-  .cart-sidebar button {
-    background-color: #e74c3c;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  .cart-sidebar button:hover {
-    background-color: #c0392b;
-  }
-  
+  /* Configuración general del cuerpo del documento */
+  display: flex;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+}
+
+#app {
+  /* Estilos para el contenedor principal de la aplicación Vue */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.product-selection {
+  /* Estilos para el contenedor de selección de productos */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.product-item {
+  /* Estilos para cada elemento de producto */
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-sidebar {
+  /* Estilos para la barra lateral del carrito de compras */
+  position: fixed;
+  align-self: flex-end;
+  width: 50%;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-sidebar h2 {
+  /* Estilos para el título del carrito de compras */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cart-sidebar ul {
+  /* Estilos para la lista no ordenada dentro del carrito de compras */
+  list-style: none;
+  padding: 0;
+}
+
+.cart-sidebar li {
+  /* Estilos para cada elemento de la lista dentro del carrito de compras */
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-sidebar input {
+  /* Estilos para los campos de entrada de cantidad en el carrito de compras */
+  width: 40px;
+  text-align: center;
+}
+
+.cart-sidebar button {
+  /* Estilos para los botones en el carrito de compras */
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.cart-sidebar button:hover {
+  /* Estilos para el estado hover de los botones en el carrito de compras */
+  background-color: #c0392b;
+}
